@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:social_task/constants/app_colors.dart';
 
 ThemeData lightTheme(BuildContext context) {
   return ThemeData.light().copyWith(
@@ -8,33 +9,39 @@ ThemeData lightTheme(BuildContext context) {
       },
     ),
     brightness: Brightness.light,
+    scaffoldBackgroundColor: AppColors.lightScaffoldBackgroundColor,
     dividerColor: Colors.black,
     colorScheme: Theme.of(context).colorScheme.copyWith(primary: Colors.black),
     textTheme: ThemeData.light().textTheme.apply(
-          fontFamily: 'Helvetica',
+          fontFamily: 'Poppins',
         ),
     primaryTextTheme: ThemeData.light().textTheme.apply(
-          fontFamily: 'Helvetica',
+          fontFamily: 'Poppins',
         ),
     inputDecorationTheme: InputDecorationTheme(
-      focusColor: Colors.redAccent,
-      filled: false,
+      focusColor: AppColors.redColor,
       contentPadding: const EdgeInsets.all(8),
+      fillColor: AppColors.greyColor,
+      filled: true,
       border: OutlineInputBorder(
-        borderSide: const BorderSide(color: Colors.redAccent),
-        borderRadius: BorderRadius.circular(18),
+        borderSide: const BorderSide(color: AppColors.greyColor),
+        borderRadius: BorderRadius.circular(15),
       ),
       enabledBorder: OutlineInputBorder(
-        borderSide: const BorderSide(color: Colors.redAccent),
-        borderRadius: BorderRadius.circular(18),
+        borderSide: const BorderSide(color: AppColors.greyColor),
+        borderRadius: BorderRadius.circular(15),
       ),
       focusedBorder: OutlineInputBorder(
-        borderSide: const BorderSide(color: Colors.redAccent),
-        borderRadius: BorderRadius.circular(18),
+        borderSide: const BorderSide(color: AppColors.greyColor),
+        borderRadius: BorderRadius.circular(15),
+      ),
+      errorBorder: OutlineInputBorder(
+        borderSide: const BorderSide(color: AppColors.redColor),
+        borderRadius: BorderRadius.circular(15),
       ),
       disabledBorder: OutlineInputBorder(
-        borderSide: const BorderSide(color: Colors.redAccent),
-        borderRadius: BorderRadius.circular(18),
+        borderSide: const BorderSide(color: AppColors.greyColor),
+        borderRadius: BorderRadius.circular(15),
       ),
     ),
     textSelectionTheme: const TextSelectionThemeData(
@@ -60,10 +67,10 @@ ThemeData darkTheme(BuildContext context) {
       },
     ),
     textTheme: ThemeData.dark().textTheme.apply(
-          fontFamily: 'Helvetica',
+          fontFamily: 'Poppins',
         ),
     primaryTextTheme: ThemeData.dark().textTheme.apply(
-          fontFamily: 'Helvetica',
+          fontFamily: 'Poppins',
         ),
     textSelectionTheme: const TextSelectionThemeData(
       cursorColor: Colors.grey,

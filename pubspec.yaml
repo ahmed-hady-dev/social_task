@@ -59,10 +59,8 @@ flutter:
     - assets/images/
     - assets/translation/
 
-#  fonts:
-#   - family: #put the font name here
-#      fonts:
-#        - asset: assets/fonts/Montserrat-Regular.ttf
-#        - asset: assets/fonts/Montserrat-Italic.ttf
-#          style: italic
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
 
