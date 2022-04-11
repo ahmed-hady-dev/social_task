@@ -20,7 +20,7 @@ ThemeData lightTheme(BuildContext context) {
         ),
     inputDecorationTheme: InputDecorationTheme(
       focusColor: AppColors.redColor,
-      contentPadding: const EdgeInsets.all(8),
+      contentPadding: const EdgeInsets.all(16),
       fillColor: AppColors.greyColor,
       filled: true,
       border: OutlineInputBorder(

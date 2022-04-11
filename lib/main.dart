@@ -13,16 +13,6 @@ import 'core/router/router.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   //===============================================================
-  // await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  // Widget? home;
-  // FirebaseAuth.instance.userChanges().listen((user) {
-  //   if (user == null) {
-  //     home = const LoginView();
-  //   } else {
-  //     home = const HomeView();
-  //   }
-  // });
-  //===============================================================
   DioHelper.init();
   //===============================================================
   await EasyLocalization.ensureInitialized();

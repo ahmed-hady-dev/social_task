@@ -34,6 +34,7 @@ class OnBoardingView extends StatelessWidget {
                       MagicRouter.navigateTo(const RegisterView());
                     }),
                 const SignInRow(),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.05),
               ],
             ),
           ),
