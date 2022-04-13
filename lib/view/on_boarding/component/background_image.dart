@@ -7,22 +7,25 @@ class BackgroundImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(
-          width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height * 0.7,
-          child: Image.asset(
-            'assets/images/onboarding.png',
-            alignment: Alignment.center,
-            fit: BoxFit.cover,
+    return Padding(
+      padding: EdgeInsets.only(top: MediaQuery.of(context).viewPadding.top),
+      child: Column(
+        children: [
+          SizedBox(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height * 0.7,
+            child: Image.asset(
+              'assets/images/onboarding.png',
+              alignment: Alignment.center,
+              fit: BoxFit.cover,
+            ),
           ),
-        ),
-        SizedBox(
-          height: MediaQuery.of(context).size.height * 0.3,
-          width: MediaQuery.of(context).size.width,
-        )
-      ],
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.3 - MediaQuery.of(context).viewPadding.top,
+            width: MediaQuery.of(context).size.width,
+          )
+        ],
+      ),
     );
   }
 }
