@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:social_task/core/router/router.dart';
-import 'package:social_task/view/home/home_view.dart';
+import 'package:social_task/view/home/main_view.dart';
 import '../../widgets/loading_widget.dart';
 import '../../widgets/main_button.dart';
 import 'component/custom_back_button.dart';
@@ -59,7 +59,7 @@ class RegisterView extends StatelessWidget {
                       focusNode: cubit.passwordNode,
                       onFieldSubmitted: (value) {
                         if (cubit.formKey.currentState!.validate()) {
-                          MagicRouter.navigateTo(const HomeView());
+                          MagicRouter.navigateTo(const MainView());
                         }
                       },
                       obscureText: cubit.isPassword,
@@ -72,7 +72,7 @@ class RegisterView extends StatelessWidget {
                           text: "Sign up",
                           onPressed: () {
                             if (cubit.formKey.currentState!.validate()) {
-                              MagicRouter.navigateTo(const HomeView());
+                              MagicRouter.navigateTo(const MainView());
                             }
                           },
                         ),

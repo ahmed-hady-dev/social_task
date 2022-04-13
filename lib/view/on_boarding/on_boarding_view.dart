@@ -3,10 +3,11 @@ import 'package:social_task/core/router/router.dart';
 import 'package:social_task/view/on_boarding/component/background_image.dart';
 import 'package:social_task/view/register/register_view.dart';
 import 'package:social_task/widgets/logo.dart';
-import 'package:social_task/view/on_boarding/main_text.dart';
-import 'package:social_task/view/on_boarding/numbers_row.dart';
-import 'package:social_task/view/on_boarding/sign_in_row.dart';
+import 'package:social_task/view/on_boarding/component/main_text.dart';
+import 'package:social_task/view/on_boarding/component/sign_in_row.dart';
 import 'package:social_task/widgets/main_button.dart';
+
+import 'component/numbers_row.dart';
 
 class OnBoardingView extends StatelessWidget {
   const OnBoardingView({Key? key}) : super(key: key);

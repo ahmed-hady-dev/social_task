@@ -10,8 +10,17 @@ ThemeData lightTheme(BuildContext context) {
     ),
     brightness: Brightness.light,
     scaffoldBackgroundColor: AppColors.lightScaffoldBackgroundColor,
-    dividerColor: Colors.black,
-    colorScheme: Theme.of(context).colorScheme.copyWith(primary: Colors.black),
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData().copyWith(
+      unselectedIconTheme: const IconThemeData(color: AppColors.bottomNavBarGreyColor),
+      selectedIconTheme: const IconThemeData(color: AppColors.lightBlackColor),
+      selectedLabelStyle: const TextStyle(fontSize: 12),
+      unselectedLabelStyle: const TextStyle(fontSize: 12),
+    ),
+    dividerColor: AppColors.darkerGreyColor,
+    colorScheme: Theme.of(context).colorScheme.copyWith(
+          primary: Colors.black,
+          secondary: AppColors.orangeColor,
+        ),
     textTheme: ThemeData.light().textTheme.apply(
           fontFamily: 'Poppins',
         ),
